@@ -96,7 +96,10 @@ async def next_page(bot, query):
     # How to Download button
 
     btn.append(
-    [InlineKeyboardButton("𝗛𝗢𝗪 𝗧𝗢 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 🤔", url="https://t.me/BGM_LinkzZ/25"),]
+    [InlineKeyboardButton("HOW TO DOWNLOAD 🤔", url="https://t.me/BGM_LinkzZ/44"),], 
+    [InlineKeyboardButton("ᴍᴏᴠɪᴇ", url="https://t.me/BGM_LinkzZ/44"), 
+     InlineKeyboardButton("ɪɴғᴏ", url="https://t.me/BGM_LinkzZ/44"), 
+     InlineKeyboardButton("sᴇʀɪᴇs", url="https://t.me/BGM_LinkzZ/44"),]
 )
 
     if n_offset == 0:
