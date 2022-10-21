@@ -382,19 +382,5 @@ def humanbytes(size):
 ####################  Dulink  ####################
 
 async def get_shortlink(link):
-    https = link.split(":")[0]
-    if "http" == https:
-        https = "https"
-        link = link.replace("http", https)
-    url = f'https://du-link.in/api'
-    params = {'api': 'be059b3cf331138d37b4a592ae0e9b35008e1aad',
-              'url': link,
-              }
-
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-            data = await response.json()
-            if data["status"] == "success":
-                return data['shortenedUrl']
-            else:
-                return f"Error: {data['message']}" 
+    shortzy = Shortzy("0d942ae271110e9affd23a8958dea65fb607211c", "tnlink.in")
+    return await shortzy.convert(link)
