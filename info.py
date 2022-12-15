@@ -38,11 +38,11 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001537145017'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'KR_Join')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "true")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '<code>{file_name}</code> \n\n <b>♻️ Ꮲᴏᴡᴇʀᴇᴅ Ᏼʏ ♻️ @BGM_LinkzZ </b>')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>🎬 Tɪᴛʟᴇ : {title} \n 📆 Yᴇᴀʀ : {year} \n 🌟 Rᴀᴛɪɴɢ : {rating} \ n 🎭 Gᴇɴʀᴇ : {genres} \n 📥 Upload : @BGM_LinkzZ \n\n Rᴇǫᴜᴇsᴛ Bʏ : {message.from_user.mention} \n 🚀 Gʀᴏᴜᴘ : {message.chat.title} </b>")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
