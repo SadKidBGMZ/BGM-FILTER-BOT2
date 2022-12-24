@@ -381,11 +381,6 @@ def humanbytes(size):
 
 ####################  Dulink  ####################
 
-async def get_shortlink(link):
- file with 2 additions and 16 deletions.
-  18  
-utils.py
-@@ -382,19 +382,5 @@ def humanbytes(size):
 ####################  Dulink  ####################
 
 async def get_shortlink(link):
